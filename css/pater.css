@@ -1,0 +1,125 @@
+/* Sponsor */
+.pater {
+	position: fixed;
+	width: 100%;
+	pointer-events: auto;
+	bottom: 0;
+	right: 0;
+	z-index: 100;
+}
+
+.pater:focus {
+	outline: none;
+}
+
+.pater::after {
+	content: 'Sponsored by';
+	position: absolute;
+	top: 2.5em;
+	left: 3.5em;
+	color: #408283;
+	font-size: 0.65em;
+	font-weight: bold;
+}
+
+.pater__inner {
+	padding: 2.75em 1.5em 1.5em;
+	background: #D4E5E4;
+	border-top: 2px solid #192637;
+}
+
+.pater__img {
+	max-width: 100%;
+}
+
+.pater__title {
+	font-size: 0.65em;
+	color: #006666;
+	margin: 0 0 0.25em 10px;
+}
+
+.pater__description {
+	color: #1a2638;
+	font-size: 0.75em;
+	font-weight: 400;
+	margin: 1em 0 0 10px;
+	display: none;
+}
+
+.pater__description strong {
+	color: #006666;
+}
+
+@media screen and (min-width: 50em) {
+	.pater {	
+		width: 300px;
+		-webkit-transform: translate3d(0,5em,0);
+		transform: translate3d(0,5em,0);
+		-webkit-transition: -webkit-transform 0.3s;
+		transition: transform 0.3s;
+	}
+	.pater::before {
+		content: '';
+		width: 300px;
+		height: 187px;
+		position: absolute;
+		background: url(../img/sponsor/AcuityScheduling_screenshot.png);
+		top: 3em;
+		left: -30%;
+		z-index: -1;
+		pointer-events: none;
+		border: 2px solid #006666;
+		-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+		transition: transform 0.3s, opacity 0.3s;
+		-webkit-transform: translate3d(25%,-20%,0);
+		transform: translate3d(25%,-20%,0);
+	}
+	.pater:focus,
+	.pater:hover {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+	.pater:focus::before,
+	.pater:hover::before {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		pointer-events: auto;
+	}
+	.pater__inner {
+		border: 2px solid #192637;
+		border-width: 2px 0 0 2px;
+	}
+	.pater__img {
+		-webkit-transform-origin: 0% 50%;
+		transform-origin: 0% 50%;
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+		-webkit-transition: -webkit-transform 0.3s;
+		transition: transform 0.3s;
+	}
+	.pater:focus .pater__img,
+	.pater:hover .pater__img {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	.pater__description {
+		opacity: 0;
+		-webkit-transform: translate3d(0,1em,0);
+		transform: translate3d(0,1em,0);
+		-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+		transition: opacity 0.3s, transform 0.3s;
+	}
+
+	.pater:focus .pater__description,
+	.pater:hover .pater__description {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		opacity: 1;
+	}
+	.pater__title {
+		font-size: 0.85em;
+	}
+	.pater__description {
+		display: block;
+	}
+}
