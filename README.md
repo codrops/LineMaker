@@ -6,6 +6,8 @@ A plugin for creating and animating decorative lines on websites.
 
 [Demo](http://tympanus.net/Development/LineMaker/)
 
+![Line Maker](http://tympanus.net/codrops/wp-content/uploads/2016/10/LineMakerDemo6.gif)
+
 This demo is sponsored by [Acuity Scheduling: Developer Friendly Appointment Scheduling](https://goo.gl/6xMtMv)
 
 ## License
