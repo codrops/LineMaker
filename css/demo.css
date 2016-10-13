@@ -50,7 +50,7 @@ a:hover, a:focus { color: #666c7b; }
 
 .demo-3 {
 	background: #e8e8ec;
-	color: #fff;
+	color: #333;
 	height: 100vh;
 	font-family: 'Roboto Condensed', sans-serif;
 }
@@ -236,7 +236,13 @@ a:hover, a:focus { color: #666c7b; }
 	color: #fff;
 	font-size: 6vw;
 	font-weight: 100;
-	margin-bottom: 10vh;
+	margin-bottom: 5vh;
+}
+
+.demo-2 .sponsor {
+	font-weight: bold;
+	margin: 2em 0 0;
+	font-size: 0.85em;
 }
 
 .demo-3 .codrops-header__title {
@@ -246,6 +252,10 @@ a:hover, a:focus { color: #666c7b; }
 	color: #000;
 	margin: 0;
 	padding: 0 0 0.35em;
+}
+
+.demo-3 .sponsor {
+	color: #727272;
 }
 
 .demo-4 .codrops-header__title {
@@ -259,6 +269,11 @@ a:hover, a:focus { color: #666c7b; }
 	text-transform: none;
 	font-size: 0.75em;
 	display: block;
+}
+
+.demo-4 .sponsor {
+	margin: 3em 0 0;
+	font-weight: bold;
 }
 
 .demo-5 .codrops-header__title {
@@ -277,6 +292,11 @@ a:hover, a:focus { color: #666c7b; }
 	font-size: 10vw;
 	margin: 0.15em 0 0 0;
 	text-shadow: 8px 13px 0px #F85659;
+}
+
+.demo-6 .sponsor {
+	font-weight: bold;
+	font-size: 0.85em;
 }
 
 .codrops-header__tagline {
